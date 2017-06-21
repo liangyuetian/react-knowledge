@@ -16,3 +16,11 @@ git push -u origin master
 ```js
 git add dir/**
 ```
+远程提交
+```js
+git add */**
+git commit -m "提交说明"
+git pull // 同步服务器上的文件
+git push -u origin master
+
+```

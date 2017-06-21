@@ -24,3 +24,8 @@ git pull // 同步服务器上的文件
 git push -u origin master
 
 ```
+
+push失败时可以使用强刷推送
+```js
+git push -f origin master
+```

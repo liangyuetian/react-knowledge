@@ -1,0 +1,19 @@
+console.time("test");
+foo();
+console.timeEnd("test");
+
+
+
+var start = window.performance.now();
+var end = window.performance.now();
+var duration = end - start;
+window.performance.now() 返回一个浮点值表示当前距离页面被加载时的毫秒时间，如果想知道页面是何时被加载的，可以获取 window.performance.timing.navigationStart 值，该表示页面加载时的 Unix 时间戳。
+
+
+var start = Date.now();
+var duration = Date.now() - start;
+该函数返回一个整数毫秒值。
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用canvas压缩图片上传</title>
+</head>
+<body>
+	<!-- http://www.tuicool.com/articles/zaIjInm -->
+	<input id="file" type="file" multiple>
+	<canvas id="canvas"></canvas>
+	<img id="preview" src="">
+	<img id="source" src="" style="display: none;">
+	<script>
+		// let canvas = document.createElement("canvas");
+		// let ctx = canvas.getContext("2d");
+		// 创建一个 Canvas 2D 对象
+
+		// drawImage 有 3 种调用方式：
+		// ctx.drawImage(image, dx, dy);
+		// ctx.drawImage(image, dx, dy, dWidth, dHeight);
+		// ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+
+		var file = document.getElementById("file");
+		var canvas = document.getElementById('canvas');
+		var source = document.getElementById('source');
+		var preview = document.getElementById('preview');
+
+		source.onload = function () {
+			var width = source.width;
+			var height = source.height;
+
+			var context = canvas.getContext("2d");
+
+			// draw image params 
+			var sx = 0;
+			var sy = 0;
+			var sWidth = width;
+			var sHeight = height;
+			var dx = 0;
+			var dy = 0;
+			var dWidth = width;
+			var dHeight = height;
+			var quality = 0.5;
+			canvas.width = width;
+			canvas.height = height;
+			context.drawImage(source, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+			var dataUrl = canvas.toDataURL("image/jpeg", quality);
+			preview.src = dataUrl;
+		}
+		
+		file.addEventListener("change", function () {
+			source.src = window.URL.createObjectURL(file.files[0])
+		})
+	</script>
+</body>
+</html>

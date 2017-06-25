@@ -12,11 +12,11 @@ git remote add origin https://github.com/liangyuetian/react-knowledge.git
 git push -u origin master
 ```
 
-批量添加文件夹
+### 批量添加文件夹
 ```js
 git add dir/**
 ```
-远程提交
+### 远程提交
 ```js
 git add */**
 git commit -m "提交说明"
@@ -25,12 +25,12 @@ git push -u origin master
 
 ```
 
-push失败时可以使用强刷推送
+### push失败时可以使用强刷推送
 ```js
 git push -f origin master
 ```
 
-git 版本回恢复命令
+### git 版本回恢复命令
 ```js
 首先
 git log 获取所有的版本信息
@@ -56,7 +56,7 @@ git reset 057d
 (7) 回退到上一次提交的状态，按照某一次的commit完全反向的进行一次commit  
 Git revert HEAD
 
-git 分支
+### git 分支
 ```js
 查看远程分支
 git branch -a

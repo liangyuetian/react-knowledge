@@ -40,7 +40,7 @@ git reset --soft：回退到某个版本，只回退了commit的信息，不会�
 
 git reset --hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容
 ```
-<<<<<<< HEAD
+
 以下是一些reset的示例：
 
 (1) 回退所有内容到上一个版本  
@@ -55,5 +55,30 @@ git reset –hard origin/master
 git reset 057d  
 (7) 回退到上一次提交的状态，按照某一次的commit完全反向的进行一次commit  
 Git revert HEAD
-=======
->>>>>>> f421e5f22477d471665c460f88604b5ab117279c
+
+git 分支
+```js
+查看远程分支
+git branch -a
+
+查看本地分支
+git branch
+
+创建分支
+git branch test
+
+把分支推到远程分支
+git push origin test 
+
+切换分支到test
+git checkout test 
+
+删除本地分支  
+git branch -d xxxxx
+
+删除远程分支
+git branch -r -d origin/branch-name  
+git push origin :branch-name  
+
+删除远程版本
+git push origin :br-1.0.0

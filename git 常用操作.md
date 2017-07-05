@@ -12,7 +12,7 @@ git push -u master  // git 提交到远程master分支
 
 #### git 撤销
 ```js
-git add *  // git 添加所有文件到git仓库，可是后悔了，添加错了，
+git add * // git 添加所有文件到git仓库，可是后悔了，添加错了，
 git reset // git 还原到没有添加到之前的操作，注意：如果提交了不可以使用这种方法还原，可以使用git reset HEAD 但是不建议
 
 ```

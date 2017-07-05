@@ -3,6 +3,7 @@
 
 #### 下载完成后, 将其解压
 > xz -d node-v6.10.3-linux-x64.tar.xz // 在Linux下，大部分情况下不能直接解压tar.xz的文件
+
 > tar xvf node-v6.10.3-linux-x64.tar // 变成tar文件后就可以正常解压了
 
 #### 将解压的 Node.js 目录移动到 /usr/local 目录下

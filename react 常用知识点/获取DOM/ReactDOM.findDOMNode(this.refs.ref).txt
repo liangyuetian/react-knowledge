@@ -1,0 +1,12 @@
+class Message extends React.Component {
+	constructor(props) {
+		super(props);
+
+	}
+	componentWillMount () {
+		console.log();
+	}
+	componentDidMount: () => {
+		var dom = ReactDOM.findDOMNode(this.refs.ref)
+	}
+}

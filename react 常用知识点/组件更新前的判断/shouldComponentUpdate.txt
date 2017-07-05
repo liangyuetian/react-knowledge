@@ -1,0 +1,9 @@
+shouldComponentUpdate: function (nextProp, nextState) {
+	if (nextState.count > 3) return false
+
+	return true
+}
+
+如果返回值为true， 则更新
+
+如果返回值为false， 则不更新

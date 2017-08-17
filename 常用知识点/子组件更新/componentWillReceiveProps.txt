@@ -1,3 +1,0 @@
-componentWillReceiveProps: function (nextProp) {
-	console.log()
-}

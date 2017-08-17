@@ -1,0 +1,3 @@
+
+#### 查看启动端口 并过滤
+> netstat -nltp | grep 21

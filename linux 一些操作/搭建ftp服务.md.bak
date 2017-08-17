@@ -1,0 +1,7 @@
+#### 使用 yum 安装 vsftpd
+> yum install vsftpd -y
+
+#### 安装完成后，启动 FTP 服务：
+> service vsftpd start
+
+#### netstat -nltp | grep 21
